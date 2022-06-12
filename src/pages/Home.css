@@ -1,4 +1,10 @@
 .Home {
-  background-color: ghostwhite;
+  background-color: rgb(116, 116, 170);
   height: 100vh;
+}
+.title{
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2 rem;
 }
