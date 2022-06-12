@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
 .split {
   height: 100%;
   width: 50%;
@@ -10,7 +12,7 @@
 
 .left {
   left: 0;
-  background-color: #0f62fe;
+
 }
 
 .right {
@@ -29,14 +31,122 @@
   font-size: 48px;
   color: black;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 1px;
 }
 
 .brief_description {
   text-align: left;
+  
 }
 
 .profile_image {
-  width: 500px;
+  width: 400px;
   height: auto;
+  border-radius: 100px;
+  margin-bottom: 2rem;
 }
+
+body{
+  background-color: rgb(116, 116, 170);
+  font-family: 'Roboto', sans-serif;
+}
+
+.aboutMe{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.name_title{
+  margin-top: 1rem;
+  color: white;
+  font-weight: 300;
+  font-size: 3rem;
+  
+}
+
+p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+.shape-blob {
+  margin-top: 15rem;
+  background: white;
+  opacity: 10%;
+  height: 200px;
+  width: 200px;
+  border-radius: 30% 50% 20% 40%;
+  animation: transform 5s ease-in-out infinite both alternate,
+    movement_one 10s ease-in-out infinite both;
+
+  position: absolute;
+  left: 70%;
+  top: 50%;
+}
+.shape-blob.one {
+  height: 500px;
+  width: 500px;
+  left: -200px;
+  top: -150px;
+  transform: rotate(-180deg);
+  animation: transform 15s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
+}
+
+.shape-blob.two {
+  height: 350px;
+  width: 350px;
+  left: 500px;
+  top: -150px;
+  transform: rotate(-180deg);
+  animation: transform 3s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
+}
+
+@keyframes movement_one {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
+  }
+}
+
+@keyframes movement_two {
+  0%,
+  500% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
+  }
+}
+
+
+
+
+
+
